@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Outfit:100,200,300,regular,500,600,700,800,900);
 @import "tailwindcss";
 
 @theme {
@@ -20,5 +21,5 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Outfit", sans-serif;
 }
