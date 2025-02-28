@@ -41,6 +41,7 @@ export async function POST(req: NextRequest) {
         const date = Date.now();
 
 
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
         const [result] = await pool.query( 
         "INSERT INTO posts (title, author, content, date, slug) VALUES (?, ?, ?, ?, ?)",
         [title, author, content, date, slug]
