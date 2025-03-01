@@ -57,6 +57,7 @@ export async function POST(req: NextRequest) {
         return NextResponse.json({
             message: 'Error creating post',
             error: e instanceof Error ? e.message : "Error creating post"
-        }, {status: 500})
+        }, { status: 500 })
+        console.log(e);
     }
 }
