@@ -1,8 +1,7 @@
 "use client";
 
 import React from "react";
-import { ReactNotifications, Store } from "react-notifications-component";
-import "react-notifications-component/dist/theme.css";
+import { Store } from "react-notifications-component";
 
 const Page: React.FC = () => {
     const handleNotification = () => {
@@ -11,7 +10,7 @@ const Page: React.FC = () => {
             message: "Notification triggered successfully!",
             type: "warning",
             insert: "top",
-            container: "top-full",
+            container: "bottom-full",
             dismiss: {
                 duration: 5000,
                 // onScreen: true,
@@ -21,7 +20,7 @@ const Page: React.FC = () => {
 
     return (
         <div>
-        <ReactNotifications />
+        
         <p>This is the login page</p>
         <button onClick={handleNotification}>Show toast</button>
         </div>
