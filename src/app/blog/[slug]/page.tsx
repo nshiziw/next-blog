@@ -1,11 +1,11 @@
-"use client"; // Make sure this is at the very top
+"use client";
 
 import React, { useEffect, useState } from "react";
-import { useRouter } from "next/router";
+import { useParams } from "next/navigation";
 
 const Page = () => {
-  const router = useRouter();
-  const { slug } = router.query; // Get the slug from the URL
+  const params = useParams();
+  const slug = params.slug; // Get the slug from the URL
   const [blog, setBlog] = useState<any>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string>("");
