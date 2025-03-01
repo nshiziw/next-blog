@@ -20,10 +20,10 @@ export async function GET(req: NextRequest, { params }: { params: { slug: string
         return NextResponse.json({
             message: "Post was found",
             post: rows[0]
-        }, {status: 200})
+        }, { status: 200 })
+        console.log('Slug:', slug);
+        console.log('Rows:', rows);
 
-        return NextResponse.json({
-        })
     } catch (err) {
         return NextResponse.json({
             message: "Error occurred",
